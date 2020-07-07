@@ -1,0 +1,37 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: weather_forecast.ipynb
+--------------------------------------------------------------------------------
+weather_forecast.ipynb:64:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'weather_forecast.ipynb'
+ outputting to 'fore.ipynb'
+--------------------------------------------------------------------------------
+
+25:0: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+30:20: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+32:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+33:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+35:10: INFO: Renamed 'tf.contrib.rnn.BasicRNNCell' to 'tf.compat.v1.nn.rnn_cell.BasicRNNCell'
+36:21: INFO: Renamed 'tf.nn.dynamic_rnn' to 'tf.compat.v1.nn.dynamic_rnn'
+40:6: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+45:7: INFO: Added keywords to args of function 'tf.reduce_sum'
+47:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+47:43: INFO: Added keywords to args of function 'tf.argmax'
+49:12: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+52:5: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+55:7: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+56:7: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+58:8: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+64:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+71:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+--------------------------------------------------------------------------------
+
